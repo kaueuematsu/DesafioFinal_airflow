@@ -1,0 +1,228 @@
+2025-01-15 10:32:06,505 INFO - Loaded executor: SequentialExecutor
+2025-01-15 10:32:06,558 INFO - Starting the scheduler
+2025-01-15 10:32:06,559 INFO - Processing each file at most -1 times
+2025-01-15 10:32:06,570 INFO - Launched DagFileProcessorManager with pid: 8151
+2025-01-15 10:32:06,572 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 10:32:06,575 INFO - Configured default timezone UTC
+2025-01-15 10:37:31,531 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 10:42:55,953 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 10:44:12,340 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:39:08.487441+00:00 [scheduled]>
+2025-01-15 10:44:12,341 INFO - DAG dbt_dag_example has 0/16 running and queued tasks
+2025-01-15 10:44:12,341 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:39:08.487441+00:00 [scheduled]>
+2025-01-15 10:44:12,351 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:39:08.487441+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 10:44:12,354 INFO - Sending TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:39:08.487441+00:00', try_number=2, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 10:44:12,354 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:39:08.487441+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:44:12,362 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:39:08.487441+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:44:14,778 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:39:08.487441+00:00', try_number=2, map_index=-1)
+2025-01-15 10:44:14,791 INFO - TaskInstance Finished: dag_id=dbt_dag_example, task_id=dbt_test, run_id=manual__2025-01-15T13:39:08.487441+00:00, map_index=-1, run_start_date=2025-01-15 13:44:13.842930+00:00, run_end_date=2025-01-15 13:44:14.288302+00:00, run_duration=0.445372, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=1, job_id=69, pool=default_pool, queue=default, priority_weight=2, operator=DbtTestOperator, queued_dttm=2025-01-15 13:44:12.349657+00:00, queued_by_job_id=59, pid=11649
+2025-01-15 10:44:14,829 ERROR - Marking run <DagRun dbt_dag_example @ 2025-01-15 13:39:08.487441+00:00: manual__2025-01-15T13:39:08.487441+00:00, state:running, queued_at: 2025-01-15 13:39:08.501127+00:00. externally triggered: True> failed
+2025-01-15 10:44:14,831 INFO - DagRun Finished: dag_id=dbt_dag_example, execution_date=2025-01-15 13:39:08.487441+00:00, run_id=manual__2025-01-15T13:39:08.487441+00:00, run_start_date=2025-01-15 13:39:09.089894+00:00, run_end_date=2025-01-15 13:44:14.830307+00:00, run_duration=305.740413, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-01-14 06:00:00+00:00, data_interval_end=2025-01-15 06:00:00+00:00, dag_hash=b6d82934e69159b00f260d25c6eec878
+2025-01-15 10:45:43,212 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>
+2025-01-15 10:45:43,213 INFO - DAG dbt_dag_example has 0/16 running and queued tasks
+2025-01-15 10:45:43,214 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>
+2025-01-15 10:45:43,216 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 10:45:43,216 INFO - Sending TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:45:42.631961+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 10:45:43,217 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:45:42.631961+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:45:43,224 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:45:42.631961+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:45:46,070 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:45:42.631961+00:00', try_number=1, map_index=-1)
+2025-01-15 10:45:46,074 INFO - TaskInstance Finished: dag_id=dbt_dag_example, task_id=dbt_test, run_id=manual__2025-01-15T13:45:42.631961+00:00, map_index=-1, run_start_date=2025-01-15 13:45:45.055002+00:00, run_end_date=2025-01-15 13:45:45.540819+00:00, run_duration=0.485817, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=72, pool=default_pool, queue=default, priority_weight=2, operator=DbtTestOperator, queued_dttm=2025-01-15 13:45:43.214827+00:00, queued_by_job_id=59, pid=12160
+2025-01-15 10:48:21,735 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 10:50:46,031 INFO - 1 tasks up for execution:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>
+2025-01-15 10:50:46,032 INFO - DAG dbt_dag_example has 0/16 running and queued tasks
+2025-01-15 10:50:46,032 INFO - Setting the following tasks to queued state:
+	<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>
+2025-01-15 10:50:46,034 INFO - Trying to enqueue tasks: [<TaskInstance: dbt_dag_example.dbt_test manual__2025-01-15T13:45:42.631961+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 10:50:46,034 INFO - Sending TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:45:42.631961+00:00', try_number=2, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 10:50:46,035 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:45:42.631961+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:50:46,041 INFO - Executing command: ['airflow', 'tasks', 'run', 'dbt_dag_example', 'dbt_test', 'manual__2025-01-15T13:45:42.631961+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag.py']
+2025-01-15 10:50:48,633 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='dbt_dag_example', task_id='dbt_test', run_id='manual__2025-01-15T13:45:42.631961+00:00', try_number=2, map_index=-1)
+2025-01-15 10:50:48,640 INFO - TaskInstance Finished: dag_id=dbt_dag_example, task_id=dbt_test, run_id=manual__2025-01-15T13:45:42.631961+00:00, map_index=-1, run_start_date=2025-01-15 13:50:47.683554+00:00, run_end_date=2025-01-15 13:50:48.105177+00:00, run_duration=0.421623, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=1, job_id=73, pool=default_pool, queue=default, priority_weight=2, operator=DbtTestOperator, queued_dttm=2025-01-15 13:50:46.033525+00:00, queued_by_job_id=59, pid=13619
+2025-01-15 10:50:48,795 ERROR - Marking run <DagRun dbt_dag_example @ 2025-01-15 13:45:42.631961+00:00: manual__2025-01-15T13:45:42.631961+00:00, state:running, queued_at: 2025-01-15 13:45:42.646029+00:00. externally triggered: True> failed
+2025-01-15 10:50:48,795 INFO - DagRun Finished: dag_id=dbt_dag_example, execution_date=2025-01-15 13:45:42.631961+00:00, run_id=manual__2025-01-15T13:45:42.631961+00:00, run_start_date=2025-01-15 13:45:43.166238+00:00, run_end_date=2025-01-15 13:50:48.795808+00:00, run_duration=305.62957, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-01-14 06:00:00+00:00, data_interval_end=2025-01-15 06:00:00+00:00, dag_hash=b6d82934e69159b00f260d25c6eec878
+2025-01-15 10:53:45,875 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 10:59:11,194 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:04:40,528 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:09:59,056 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:15:17,980 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:20:39,837 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:25:05,435 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:25:05,438 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:25:05,440 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:25:05,444 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:25:05,463 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=2, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:25:05,466 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:25:05,478 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:25:17,772 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=2, map_index=-1)
+2025-01-15 11:25:17,784 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=scheduled__2025-01-14T00:00:00+00:00, map_index=-1, run_start_date=2025-01-15 14:25:07.563303+00:00, run_end_date=2025-01-15 14:25:17.153291+00:00, run_duration=9.589988, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=3, job_id=92, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:25:05.441025+00:00, queued_by_job_id=59, pid=25879
+2025-01-15 11:25:18,075 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:25:18,076 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:25:18,076 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:25:18,079 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:25:18,080 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=2, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:25:18,081 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:25:18,089 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:25:26,943 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=2, map_index=-1)
+2025-01-15 11:25:26,949 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:19:58.776929+00:00, map_index=-1, run_start_date=2025-01-15 14:25:20.190596+00:00, run_end_date=2025-01-15 14:25:26.420985+00:00, run_duration=6.230389, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=2, max_tries=3, job_id=93, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:25:18.078315+00:00, queued_by_job_id=59, pid=25971
+2025-01-15 11:25:53,309 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:25:53,309 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:25:53,310 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:25:53,332 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:25:53,334 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:25:53,334 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:25:53,345 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag2.py']
+2025-01-15 11:26:06,356 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=1, map_index=-1)
+2025-01-15 11:26:06,364 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:25:52.929954+00:00, map_index=-1, run_start_date=2025-01-15 14:25:55.480069+00:00, run_end_date=2025-01-15 14:26:05.863480+00:00, run_duration=10.383411, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=3, job_id=96, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:25:53.311805+00:00, queued_by_job_id=59, pid=26303
+2025-01-15 11:26:06,409 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:30:18,062 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:30:18,063 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:30:18,064 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:30:18,066 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:30:18,067 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=3, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:30:18,067 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:30:18,074 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:30:28,877 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=3, map_index=-1)
+2025-01-15 11:30:28,883 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=scheduled__2025-01-14T00:00:00+00:00, map_index=-1, run_start_date=2025-01-15 14:30:19.768247+00:00, run_end_date=2025-01-15 14:30:28.384159+00:00, run_duration=8.615912, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=3, job_id=97, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:30:18.065082+00:00, queued_by_job_id=59, pid=27136
+2025-01-15 11:30:29,078 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:30:29,079 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:30:29,079 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:30:29,080 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:30:29,081 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=3, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:30:29,081 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:30:29,087 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:30:36,478 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=3, map_index=-1)
+2025-01-15 11:30:36,483 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:19:58.776929+00:00, map_index=-1, run_start_date=2025-01-15 14:30:30.562930+00:00, run_end_date=2025-01-15 14:30:35.992668+00:00, run_duration=5.429738, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=3, job_id=98, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:30:29.080026+00:00, queued_by_job_id=59, pid=27184
+2025-01-15 11:31:06,482 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:31:06,482 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:31:06,482 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:31:06,484 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:31:06,485 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=3, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:31:06,485 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:31:06,491 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:31:13,950 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=3, map_index=-1)
+2025-01-15 11:31:13,956 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:25:52.929954+00:00, map_index=-1, run_start_date=2025-01-15 14:31:07.936083+00:00, run_end_date=2025-01-15 14:31:13.522652+00:00, run_duration=5.586569, state=up_for_retry, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=3, max_tries=3, job_id=99, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:31:06.483395+00:00, queued_by_job_id=59, pid=27310
+2025-01-15 11:31:27,522 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:35:29,027 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:35:29,028 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:35:29,028 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>
+2025-01-15 11:35:29,030 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests scheduled__2025-01-14T00:00:00+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:35:29,030 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=4, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:35:29,030 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:35:29,037 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'scheduled__2025-01-14T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:35:39,541 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='scheduled__2025-01-14T00:00:00+00:00', try_number=4, map_index=-1)
+2025-01-15 11:35:39,546 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=scheduled__2025-01-14T00:00:00+00:00, map_index=-1, run_start_date=2025-01-15 14:35:30.871693+00:00, run_end_date=2025-01-15 14:35:39.104944+00:00, run_duration=8.233251, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=4, max_tries=3, job_id=100, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:35:29.029039+00:00, queued_by_job_id=59, pid=28066
+2025-01-15 11:35:39,708 ERROR - Marking run <DagRun daggggggg @ 2025-01-14 00:00:00+00:00: scheduled__2025-01-14T00:00:00+00:00, state:running, queued_at: 2025-01-15 14:19:59.604750+00:00. externally triggered: False> failed
+2025-01-15 11:35:39,709 INFO - DagRun Finished: dag_id=daggggggg, execution_date=2025-01-14 00:00:00+00:00, run_id=scheduled__2025-01-14T00:00:00+00:00, run_start_date=2025-01-15 14:19:59.661380+00:00, run_end_date=2025-01-15 14:35:39.709066+00:00, run_duration=940.047686, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-01-14 00:00:00+00:00, data_interval_end=2025-01-15 00:00:00+00:00, dag_hash=b136b5b5f088ebcb44f19554e446bf12
+2025-01-15 11:35:39,718 INFO - Setting next_dagrun for daggggggg to 2025-01-15 00:00:00+00:00, run_after=2025-01-16 00:00:00+00:00
+2025-01-15 11:35:39,731 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:35:39,731 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:35:39,731 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>
+2025-01-15 11:35:39,732 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:19:58.776929+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:35:39,733 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=4, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:35:39,733 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:35:39,740 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:19:58.776929+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:35:47,677 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:19:58.776929+00:00', try_number=4, map_index=-1)
+2025-01-15 11:35:47,684 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:19:58.776929+00:00, map_index=-1, run_start_date=2025-01-15 14:35:41.290913+00:00, run_end_date=2025-01-15 14:35:47.177568+00:00, run_duration=5.886655, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=4, max_tries=3, job_id=101, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:35:39.732128+00:00, queued_by_job_id=59, pid=28114
+2025-01-15 11:35:47,755 ERROR - Marking run <DagRun daggggggg @ 2025-01-15 14:19:58.776929+00:00: manual__2025-01-15T14:19:58.776929+00:00, state:running, queued_at: 2025-01-15 14:19:58.910094+00:00. externally triggered: True> failed
+2025-01-15 11:35:47,756 INFO - DagRun Finished: dag_id=daggggggg, execution_date=2025-01-15 14:19:58.776929+00:00, run_id=manual__2025-01-15T14:19:58.776929+00:00, run_start_date=2025-01-15 14:19:59.667300+00:00, run_end_date=2025-01-15 14:35:47.756220+00:00, run_duration=948.08892, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-01-14 00:00:00+00:00, data_interval_end=2025-01-15 00:00:00+00:00, dag_hash=b136b5b5f088ebcb44f19554e446bf12
+2025-01-15 11:36:14,141 INFO - 1 tasks up for execution:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:36:14,141 INFO - DAG daggggggg has 0/16 running and queued tasks
+2025-01-15 11:36:14,141 INFO - Setting the following tasks to queued state:
+	<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>
+2025-01-15 11:36:14,142 INFO - Trying to enqueue tasks: [<TaskInstance: daggggggg.dbt_run_tests manual__2025-01-15T14:25:52.929954+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2025-01-15 11:36:14,143 INFO - Sending TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=4, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2025-01-15 11:36:14,143 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:36:14,150 INFO - Executing command: ['airflow', 'tasks', 'run', 'daggggggg', 'dbt_run_tests', 'manual__2025-01-15T14:25:52.929954+00:00', '--local', '--subdir', 'DAGS_FOLDER/DAG.py']
+2025-01-15 11:36:23,142 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='daggggggg', task_id='dbt_run_tests', run_id='manual__2025-01-15T14:25:52.929954+00:00', try_number=4, map_index=-1)
+2025-01-15 11:36:23,149 INFO - TaskInstance Finished: dag_id=daggggggg, task_id=dbt_run_tests, run_id=manual__2025-01-15T14:25:52.929954+00:00, map_index=-1, run_start_date=2025-01-15 14:36:15.723321+00:00, run_end_date=2025-01-15 14:36:22.442661+00:00, run_duration=6.71934, state=failed, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=4, max_tries=3, job_id=102, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2025-01-15 14:36:14.142211+00:00, queued_by_job_id=59, pid=28242
+2025-01-15 11:36:23,210 ERROR - Marking run <DagRun daggggggg @ 2025-01-15 14:25:52.929954+00:00: manual__2025-01-15T14:25:52.929954+00:00, state:running, queued_at: 2025-01-15 14:25:52.967745+00:00. externally triggered: True> failed
+2025-01-15 11:36:23,211 INFO - DagRun Finished: dag_id=daggggggg, execution_date=2025-01-15 14:25:52.929954+00:00, run_id=manual__2025-01-15T14:25:52.929954+00:00, run_start_date=2025-01-15 14:25:53.236645+00:00, run_end_date=2025-01-15 14:36:23.211395+00:00, run_duration=629.97475, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-01-14 00:00:00+00:00, data_interval_end=2025-01-15 00:00:00+00:00, dag_hash=b136b5b5f088ebcb44f19554e446bf12
+2025-01-15 11:36:50,152 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:42:11,218 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:47:33,664 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:53:01,242 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 11:58:24,094 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:03:46,243 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:09:13,169 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:14:37,861 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:20:04,458 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:25:31,790 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:31:15,571 INFO - Heartbeat recovered after 280.05 seconds
+2025-01-15 12:35:35,578 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:41:10,148 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 12:46:42,384 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:01:09,433 INFO - Heartbeat recovered after 871.82 seconds
+2025-01-15 13:06:38,640 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:12:13,822 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:17:44,927 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:23:18,510 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:28:50,241 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:34:21,465 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:39:55,364 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:45:27,466 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:50:58,472 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 13:56:33,299 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:02:04,119 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:07:36,163 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:13:06,735 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:18:41,064 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:24:13,315 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:29:45,636 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:35:20,046 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:40:50,678 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 14:46:21,256 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:04:07,231 INFO - Heartbeat recovered after 751.08 seconds
+2025-01-15 15:04:25,303 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:09:56,345 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:15:28,636 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:21:00,920 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:26:36,565 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:32:08,844 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:37:41,127 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:43:16,981 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:48:48,840 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:54:21,142 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 15:59:57,264 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:05:29,476 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:11:01,545 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:16:33,867 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:22:09,799 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:27:41,854 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:33:13,634 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:38:49,468 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:44:21,776 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:49:53,985 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 16:55:29,302 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:01:01,555 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:06:33,859 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:12:09,440 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:17:41,215 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:23:13,519 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:28:45,821 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:34:21,343 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:39:52,975 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:45:25,283 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:51:01,182 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 17:56:32,924 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-01-15 18:02:04,397 INFO - Adopting or resetting orphaned tasks for active dag runs

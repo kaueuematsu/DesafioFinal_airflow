@@ -1,0 +1,5 @@
+[2025-01-15 10:32:06 -0300] [8146] [INFO] Starting gunicorn 23.0.0
+[2025-01-15 10:32:06 -0300] [8146] [INFO] Listening at: http://[::]:8793 (8146)
+[2025-01-15 10:32:06 -0300] [8146] [INFO] Using worker: sync
+[2025-01-15 10:32:06 -0300] [8150] [INFO] Booting worker with pid: 8150
+[2025-01-15 10:32:06 -0300] [8155] [INFO] Booting worker with pid: 8155
