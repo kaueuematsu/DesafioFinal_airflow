@@ -1,7 +1,7 @@
 # Desafio Final do Programa Lighthouse 
 
 Repositório com a parte de orquestração do projeto final do Programa Lighthouse da Indicium.
-Este é um projeto multidisciplinar que abrange desde a extração, passando pelo carregamento (Snowflake), modelagem, orquestração, até a criação de produtos de dados.
+Este é um projeto multidisciplinar que abrange desde a extração, passando pelo armazenamento, modelagem, orquestração, até a criação de produtos de dados.
  
 ![image](https://github.com/user-attachments/assets/354bbc63-1e31-422e-8fb4-59c9b40e3fa3)
 
